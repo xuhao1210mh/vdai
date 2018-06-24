@@ -1,0 +1,96 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{margin:0;padding:0}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { display:block; }
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+ul,ol{list-style:none;}
+strong,b{font-weight:normal;}
+em,i{font-style:normal;}
+table{border-spacing:0;border-collapse:collapse;}
+img{border:0;vertical-align:middle;}
+input,select{vertical-align:middle;font-size:100%;line-height:150%;font-family:arial,'\5FAE\8F6F\96C5\9ED1',sans-serif;-webkit-appearance:none;}
+a{text-decoration:none;outline:none;hide-focus:expression(this.hideFocus=true);background-color:transparent;-webkit-tap-highlight-color:transparent;color:black}
+
+body{font:14px/1.5 arial,"\5FAE\8F6F\96C5\9ED1",sans-serif;-webkit-text-size-adjust:none;-ms-text-size-adjust:none;}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.clearFix::after{
+    content: '';
+    display: block;
+    clear: both;
+    zoom:1;
+    overflow: hidden;
+}
+.disb{
+    display: block;
+    height: 100%;
+}
+.b0{
+    border: none !important;
+}
+.blue {
+     background: #03CBFD;
+ }
+a {
+    text-decoration: none;
+    color: #000000;
+}
+.navbar {
+    margin-bottom:0;
+}
+nav.navbar {
+    background: #03CBFD;
+    text-align: center;
+    position: relative;
+    height: 13.2rem;
+}
+nav.navbar div{
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+}
+nav.navbar p {
+    /*position: absolute;*/
+    /*left: 50%;*/
+    /*bottom: 2.9rem;*/
+    /*color: #ffffff;*/
+    /*font-size: 36rem;*/
+    /*font-weight: bold;*/
+    /*margin-left: -7.4rem;*/
+    /*margin-bottom: 0;*/
+}
+
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.32rem;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    background-color: #03cbfd;
+    width: 100%;
+    letter-spacing: 0.01rem;
+}
+header>a{
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    width: 1.5rem;
+    height: 0.88rem;
+    line-height: 1rem;
+    text-indent: 0.4rem;
+    font-size: 0.3rem;
+    color: white;
+}
+header a img{
+    position: absolute;
+    top: 0.25rem;
+    left: 0.1rem;
+    width: 0.53rem;
+    height: 0.53rem;
+    margin: auto;
+}

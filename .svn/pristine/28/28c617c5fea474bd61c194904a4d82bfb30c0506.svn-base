@@ -1,0 +1,9 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <layout name="Layout/index" />
+    <div>second</div>
+</body>
+</html>

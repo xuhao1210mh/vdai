@@ -1,0 +1,19 @@
+<?php
+namespace Desk\Model;
+use Think\Model;
+
+class AuthfirstModel extends Model{
+
+    protected $tableName = 'auth_first';
+
+    //定义自动验证
+    protected $_validate = array(
+        array('name','require','请输入您的联系方式'),
+        array('number','require','请输入您的联系方式'),
+        array('family_name','require','请输入亲属的联系方式'),
+        array('family_number','require','请输入亲属的联系方式'),
+        array('friend_name','require','请输入朋友的联系方式'),
+        array('friend_number','require','请输入朋友的联系方式'),
+    );
+
+}

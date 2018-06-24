@@ -1,0 +1,287 @@
+<?php
+namespace Desk\Controller;
+use Think\Controller;
+
+class LoanController extends Controller{
+
+    public function fill(){
+        if(IS_AJAX){
+            session('name', $_POST['name']);
+            session('number', $_POST['number']);
+            $this->success('成功');//, '/desk/loan/assetSubmit');
+        }else{
+            $this->error('失败');
+        }
+
+    }
+
+    public function assetSubmit(){
+        $setting = M('setting');
+        $result = $setting->select();
+        $this->assign('result', $result);
+        if(IS_AJAX){
+            $loan = M('loan');
+            if($loan->create()){
+                $result = $loan->add();
+                if($result){
+                    session('loan_id', $result);
+                    $this->success('成功', 'rzPage');
+                }else{
+                    $this->error('失败');
+                }
+            }else{
+                $this->error('出错');
+            }
+        }
+
+        $this->display();
+
+    }
+
+    public function rzPage(){
+
+        if(IS_AJAX){
+            $data['loan_id'] = $_SESSION['loan_id'];
+            $data['name'] = $_POST['name'];
+            $data['number'] = $_POST['number'];
+            $data['family_name'] = $_POST['family_name'];
+            $data['family_number'] = $_POST['family_number'];
+            $data['friend_name'] = $_POST['friend_name'];
+            $data['friend_number'] = $_POST['friend_number'];
+            $authfirst = D('authfirst');
+            if($authfirst->create()){
+                $result = $authfirst->data($data)->add();
+                if($result){
+                    $this->success('成功','rzPage1');
+                }else{
+                    $this->error('失败');
+                }
+            }else{
+                $this->error($authfirst->getError());
+            }
+        }
+
+        $this->display();
+    }
+
+    public function upload1(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        //$ext = strrchr($filename['name'], '.');
+        $name = $filename['name'];
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic/' . $name;
+        //$_SESSION['pic1'] = $name . $ext;
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $this->error('图片上传失败');
+            exit();
+        }else{
+            $loan_id = $_SESSION['loan_id'];
+            $data['pic1'] = $name;
+            $auth = M('auth_second');
+            $auth->execute("insert into auth_second(loan_id, pic1) values('$loan_id', '$name')");
+        }
+
+    }
+
+    public function upload2(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        //$ext = strrchr($filename['name'], '.');
+        $name = $filename['name'];
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic/' . $name;
+        //$_SESSION['pic2'] = $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $loan_id = $_SESSION['loan_id'];
+            $auth = M('auth_second');
+            $auth->where("loan_id='$loan_id'")->delete();
+            $this->error('图片上传失败');
+            exit();
+        }else{
+            $loan_id = $_SESSION['loan_id'];
+            //$data['pic2'] = $name;
+            $auth = M('auth_second');
+            $auth->execute("update auth_second set pic2='$name' where loan_id='$loan_id'");
+        }
+
+    }
+
+    public function upload3(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        //$ext = strrchr($filename['name'], '.');
+        $name = $filename['name'];
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic/' . $name;
+        //$_SESSION['pic3'] = $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $loan_id = $_SESSION['loan_id'];
+            $auth = M('auth_second');
+            $auth->where("loan_id='$loan_id'")->delete();
+            $this->error('图片上传失败');
+            exit();
+        }else{
+            $loan_id = $_SESSION['loan_id'];
+            //$data['pic3'] = $name;
+            $auth = M('auth_second');
+            $auth->execute("update auth_second set pic3='$name' where loan_id='$loan_id'");
+        }
+
+    }
+
+    public function upload4(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        //$ext = strrchr($filename['name'], '.');
+        $name = $filename['name'];
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic/' . $name;
+        //$_SESSION['pic4'] = $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $loan_id = $_SESSION['loan_id'];
+            $auth = M('auth_second');
+            $auth->where("loan_id='$loan_id'")->delete();
+            $this->error('图片上传失败');
+            exit();
+        }else{
+            $loan_id = $_SESSION['loan_id'];
+            //$data['pic4'] = $name;
+            $auth = M('auth_second');
+            $auth->execute("update auth_second set pic4='$name' where loan_id='$loan_id'");
+        }
+
+    }
+
+    public function upload5(){
+        if(IS_AJAX){
+            $loan_id = $_SESSION['loan_id'];
+            $number = $_POST['card_number'];
+            $name = $_POST['card_name'];
+            $auth = M('auth_second');
+            $result = $auth->execute("update auth_second set card_number='$number',card_name='$name' where loan_id='$loan_id'");
+            if($result){
+                $this->success('成功', 'renZheng');
+            }else{
+                $auth = M('auth_second');
+                $auth->where("loan_id='$loan_id'")->delete();
+                $this->error('资料提交失败，请重新填写');
+            }
+        }
+    }
+
+    public function auth1(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        $ext = strrchr($filename['name'], '.');
+        $name = md5($filename['name']);
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic2/' . $name . $ext;
+        $_SESSION['auth1'] = $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $this->error('图片上传失败');
+            exit();
+        }
+
+    }
+
+    public function auth2(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        $ext = strrchr($filename['name'], '.');
+        $name = md5($filename['name']);
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic2/' . $name . $ext;
+        $_SESSION['auth2'] = $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $this->error('图片上传失败');
+            exit();
+        }
+
+    }
+
+    public function auth3(){
+
+        if(empty($_FILES['file']['name'])){
+            $msg = array('code' => 0, 'msg' => '请上传图片');
+            echo json_encode($msg);
+            exit();
+        }
+        $filename = $_FILES['file'];
+        $ext = strrchr($filename['name'], '.');
+        $name = md5($filename['name']);
+        $dir_name = dirname(dirname(dirname(__DIR__))) . '/Public/authpic2/' . $name . $ext;
+    
+        if(!move_uploaded_file($filename['tmp_name'], $dir_name)){
+            $this->error('图片上传失败');
+            exit();
+        }else{
+            $loan_id = $_SESSION['loan_id'];
+            //$_SESSION['auth3'] = $name . $ext;
+            $data = array(
+                'loan_id' => $loan_id,
+                'auth1' => $_SESSION['auth1'],
+                'auth2' => $_SESSION['auth2'],
+                'auth3' => $name . $ext
+            );
+            $auth = M('auth_third');
+            $result = $auth->data($data)->add();
+            if($result){
+                $loan_id = $_SESSION['loan_id'];
+                $data['status'] = 1;
+                $loan = M('loan');
+                $auth1 = M('auth_first');
+                $auth2 = M('auth_second');
+                $auth3 = M('auth_third');
+                $loan->where("loan_id='$loan_id'")->data($data)->save();
+                $auth1->where("loan_id='$loan_id'")->data($data)->save();
+                $auth2->where("loan_id='$loan_id'")->data($data)->save();
+                $auth3->where("loan_id='$loan_id'")->data($data)->save();
+                session('auth1', null);
+                session('auth2', null);
+                session('name', null);
+                session('number', null);
+                $this->success('成功', '/desk/result/shResult1');
+            }else{
+                $loan_id = $_SESSION['loan_id'];
+                $auth = M('auth_third');
+                $auth->where("loan_id='$loan_id'")->delete();
+                $this->error('资料提交失败，请重新填写');
+            }
+        }
+    }
+
+    public function renZheng(){
+        $this->display();
+    }
+
+}

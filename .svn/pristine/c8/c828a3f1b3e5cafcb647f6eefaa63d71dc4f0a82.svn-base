@@ -1,0 +1,65 @@
+
+
+header {
+    margin-top: 3.76rem;
+    margin-bottom: 1.35rem ;
+}
+header img {
+    display: block;
+    margin: 0 auto;
+    width: 1.64rem;
+    height: 0.52rem;
+}
+header .dengl {
+    margin-top: 0.41rem;
+    width: 0.71rem;
+    height: 0.35rem;
+}
+section input {
+    display: block;
+    width: 5.9rem;
+    height: 0.74rem;
+    margin: 0.5rem auto auto;
+    border-radius: 0.37rem;
+    border: 0.04rem solid #03cbfd;
+    text-indent: 0.43rem;
+    font-size: 0.3rem;
+    color: #acacac;
+}
+
+section .one {
+    margin-top: 0.85rem;
+}
+section .p {
+    width: 5.9rem;
+    margin: 0.29rem auto 0.6rem auto;
+    position: relative;
+}
+section .p p {
+    display: inline;
+    font-size: 0.24rem;
+    color: #acacac;
+}
+section .p p a {
+    text-decoration: none;
+    color: #acacac;
+}
+section .p p.wj {
+    position: absolute;
+    top: -0.52rem;
+}
+.p p.zc {
+    position: absolute;
+    top: -0.52rem;
+    right: 0;
+}
+section.login {
+    padding-top: 0.8rem;
+    padding-bottom: 3.15rem;
+}
+section.login input {
+    background: #03cbfd;
+    color: #ffffff;
+    margin: -0.3rem auto auto;
+    text-indent: 0;
+}

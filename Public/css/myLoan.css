@@ -1,0 +1,48 @@
+body {
+    background: #f5f7f8;
+}
+section {
+    margin: 0.41rem auto 1.17rem auto;
+}
+.panel {
+    width: 6.42rem;
+    height: 3.28rem;
+    background: #ffffff;
+    margin: 0 auto 0.3rem;
+    position: relative;
+}
+.panel-body {
+    padding-top: 0.4rem;
+    margin-left: 0.61rem;
+    border-bottom: 0.04rem solid #f5f7f8;
+}
+.panel-body .rate {
+    margin-top: 0.2rem;
+}
+.panel-body > p {
+    font-size: 0.3rem;
+    letter-spacing: 0.01rem;
+}
+.panel-body > div {
+    font-size: 0.18rem;
+    letter-spacing: 0.01rem;
+    padding-left: 0.25rem;
+}
+p.top {
+    position: absolute;
+    top: 0.21rem;
+    right: 0.48rem;
+}
+.img img {
+    position: absolute;
+    left: 0.15rem;
+    top: 0.11rem;
+}
+
+.panel-heading a {
+    font-size: 0.36rem;
+    color: #03cbfd;
+    letter-spacing: 0.02rem;
+    display: block;
+    margin: 0.3rem auto auto 2.86rem;
+}

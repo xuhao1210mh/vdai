@@ -1,0 +1,55 @@
+header {
+    position: relative;
+    background: #ffffff;
+}
+header a {
+    display: block;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.3rem;
+}
+header a img {
+    width: 0.35rem;
+    height: 0.38rem;
+}
+header a span {
+    width: 0.56rem;
+    height: 0.28rem;
+    font-size: 0.3rem;
+    color: #03CBFD;
+}
+
+section div {
+    margin: 0 auto;
+    text-align: center;
+    color: #03CBFD;
+    padding-top: 1rem;
+    font-size: 0.37rem;
+    letter-spacing: 2px;
+}
+section input {
+    width: 5.9rem;
+    height: 0.74rem;
+    border-radius: 0.37rem;
+    border: solid 0.04rem #03cbfd;
+    display: block;
+    margin: 0.5rem auto auto;
+    text-indent: 0.39rem;
+    color: #bbbbbb;
+    font-size: 0.3rem;
+}
+section.half {
+    width: 5.9rem;
+    margin: 0 auto 1.8rem;
+}
+section.half input {
+    width: 2.8rem;
+    display: inline;
+}
+section.change{
+    margin: 0.5rem auto 2.5rem;
+}
+.blue {
+    color: #ffffff;
+}
+

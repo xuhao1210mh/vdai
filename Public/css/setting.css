@@ -1,0 +1,67 @@
+body {
+    background: #f4f4f4;
+}
+header span {
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    font-size: 0.3rem;
+    line-height: 0.48rem;
+}
+header span a {
+    color: #ffffff;
+}
+header {
+    font-size: 0.36rem;
+}
+section {
+    padding-left: 0.75rem;
+    height: 0.85rem;
+    line-height: 0.85rem;
+    border-bottom: 0.01rem solid #bfbfbf;
+    background: #ffffff;
+}
+section span {
+    padding-right: 0.86rem;
+    color: #bbbbbb;
+}
+section div {
+    font-size: 0.3rem;
+    display: inline-block;
+}
+section span.num {
+    font-size: 0.3rem;
+    color: #000;
+}
+main>div {
+    margin: 2.6rem 1.62rem 3.5rem;
+}
+main>div input{
+    width: 4.26rem;
+    height: 0.75rem;
+    background-image: linear-gradient(
+            #03cbfd,
+            #03cbfd),
+    linear-gradient(
+            #03cbfd,
+            #03cbfd);
+    border-radius: 0.2rem;
+    border-width: 0;
+    font-size: 0.3rem;
+    color: #ffffff;
+}
+section img {
+    width: 0.18rem;
+    height: 0.29rem;
+    padding-right: 0.3rem;
+    padding-top: 0.28rem;
+}
+#nickname{
+    height: 0.7rem;
+    width: 1.5rem;
+    /* padding-right: 0.86rem; */
+    text-align: right;
+    border: none;
+    outline: none;
+    color: #bbbbbb;
+}

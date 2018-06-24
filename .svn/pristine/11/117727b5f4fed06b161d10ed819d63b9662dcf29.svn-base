@@ -1,0 +1,34 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+    <title></title>
+    <script src="/Public/js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div>
+        <form action="">
+            <input type="text" placeholder="请输入用户名" id="username">
+            <input type="text" placeholder="请输入密码" id="password">
+            <button type="button" id="submit">登陆</button>
+        </form>
+    </div>
+
+<!--  -->
+<script>
+    $('#submit').on('click', function(){
+
+        $.ajax({
+            url: "<?php echo U('Admin/index/login');?>",
+            type: "post",
+            dataType: "json",
+            data: {
+                username: $('#username').val(),
+                password: $('#password').val()
+            },
+            success: function(data){
+                console.log(data);
+            }
+        });
+    });
+</script>
+</body>
+</html>

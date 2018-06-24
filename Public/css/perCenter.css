@@ -1,0 +1,111 @@
+body {
+    background: #f5f7f8;
+}
+section {
+    position: relative;
+}
+section .blue {
+    height: 1.18rem;
+    background: #03cbfd;
+}
+section .info {
+    /* position: absolute; */
+    /* top: 0.25rem; */
+    /* margin-left: 0.3rem; */
+    width: 6.9rem;
+    height: 2.81rem;
+    background: #ffffff;
+    box-shadow: 0px 0px 8px 0px
+    rgba(55, 55, 55, 0.55);
+    border-radius: 10px;
+    margin: -1rem auto;
+    /* display:  block; */
+}
+section p.name {
+    position: absolute;
+    left: 2.1rem;
+    top: 0.45rem;
+    color: #03cbfd;
+    font-size: 0.36rem;
+}
+section p.ml {
+    position: absolute;
+    top: 2.37rem;
+    left: 2.83rem;
+    font-size: 0.3rem;
+    color: #000000;
+}
+section p.num {
+    position: absolute;
+    top: 1.07rem;
+    left: 2.14rem;
+    font-size: 0.36rem;
+}
+section .loan {
+    position: absolute;
+    top: 1.47rem;
+    left: 3rem;
+    width: 0.89rem;
+    height: 0.89rem;
+}
+section .cat {
+    width: 1.4rem;
+    height: 1.39rem;
+    margin: 0.25rem auto auto 0.3rem;
+}
+section.two {
+    margin-top: 2.18rem;
+}
+.two p {
+    height: 1.08rem;
+    line-height: 1.08rem;
+    background: #ffffff;
+    margin-top: 0.2rem;
+    text-indent: 0.17rem;
+    font-size: 0.3rem;
+    color: #000000;
+}
+section.two img {
+    width: 0.48rem;
+    height: 0.48rem;
+    padding-right: 0.17rem;
+}
+
+
+section.three {
+    height: 0.98rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 0.04rem 0;
+    color: #000000;
+}
+
+section.three .home {
+    margin: 0.11rem auto auto 1.18rem;
+    text-align: center;
+}
+
+section.three .person {
+    margin: 0.11rem 1.05rem auto auto;
+    text-align: center;
+}
+section.three a img{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+section.three span {
+    display: block;
+    text-align: center;
+}
+section.three .home>span {
+    color: #aaaaaa;
+    width: 0.55rem;
+    height: 0.28rem;
+    font-size: 0.24rem;
+}
+section.three .person>span {
+    color: #00ccff;
+    width: 1.13rem;
+    height: 0.28rem;
+    font-size: 0.2rem;
+}

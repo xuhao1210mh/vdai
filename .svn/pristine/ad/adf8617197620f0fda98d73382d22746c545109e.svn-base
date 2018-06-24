@@ -1,0 +1,98 @@
+.one div.line {
+    height: 0.12rem;
+    width: 5.64rem;
+    margin: 0.89rem auto 0.7rem;
+    position: relative;
+}
+.one div.line>div {
+    width: 1.16rem;
+    height: 0.12rem;
+    border: solid 0.02rem #03cbfd;
+    position: absolute;
+}
+.one div.line .line1 {
+    background: #03cbfd;
+}
+.one div.line .line2 {
+    left: 1.48rem;
+}
+.one div.line .line3 {
+    left: 2.96rem;
+}
+.one div.line .line4 {
+    left: 4.48rem;
+}
+.one {
+    text-align: center;
+}
+.tip {
+    margin: 0 0.26rem 1.12rem;
+}
+.one span {
+    font-size: 0.24rem;
+    letter-spacing: 0.01rem;
+    color: #464646;
+    padding-right: 0.4rem;
+}
+span.last {
+    padding-right: 0;
+}
+.line img {
+    position: absolute;
+    width: 0.38rem;
+    height: 0.38rem;
+    top: -0.12rem;
+}
+.line img.one {
+    left: -0.38rem;
+}
+.line img.two {
+    left: 1.13rem;
+}
+.line img.three {
+    left: 2.63rem;
+}
+.line img.four {
+    left: 4.13rem;
+}
+.line img.five {
+    right: -0.38rem;
+}
+
+section.two {
+    text-align: center;
+}
+section.two p {
+    font-size: 0.24rem;
+    color: #bbbbbb;
+    letter-spacing: 0.01rem;
+}
+section.two input {
+    display: block;
+    margin: 0.69rem auto 0.4rem;
+    width: 3.56rem;
+    height: 0.76rem;
+    background-color: #ffffff;
+    box-shadow: 0 0.03rem 0.05rem 0.01rem
+    rgba(37, 36, 36, 0.29);
+    border-radius: 0.2rem;
+    border: none;
+    font-size: 0.37rem;
+    color: #03cbfd;
+}
+section.two button {
+    width: 3.56rem;
+    height: 0.76rem;
+    background-color: #03cbfd;
+    box-shadow: 0 0.03rem 0.05rem 0.01rem
+    rgba(37, 36, 36, 0.29);
+    border-radius: 0.2rem;
+    border: none;
+    margin-bottom: 0.39rem;
+    color: #ffffff;
+    font-size: 0.37rem;
+}
+section.two p.red {
+    color: #ff0000;
+}
+

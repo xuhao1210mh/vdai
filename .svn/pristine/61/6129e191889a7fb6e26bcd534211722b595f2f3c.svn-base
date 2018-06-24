@@ -1,0 +1,79 @@
+header span {
+    position: absolute;
+    right: 0.3rem;
+    bottom: 0.3rem;
+    font-size: 0.3rem;
+    line-height: 0.48rem;
+}
+header span a {
+    color: #ffffff;
+
+}
+
+.one {
+    position: relative;
+    text-align: center;
+}
+.one img {
+    margin-left: auto;
+    margin-right: auto;
+}
+.one img.arrow{
+    position: absolute;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    top: 0.78rem;
+    left: 2.8rem;
+}
+
+.one img.FK {
+    position: absolute;
+    top: 0.49rem;
+    left: 2.44rem;
+    width: 2.64rem;
+    height: 2.61rem;
+}
+input {
+    width: 2.31rem;
+    height: 0.76rem;
+    background-image: linear-gradient(
+            #03cbfd,
+            #03cbfd),
+    linear-gradient(
+            #03cbfd,
+            #03cbfd);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 0.2rem;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-size: 0.3rem;
+    color: #ffffff;
+    position: absolute;
+    top: 5rem;
+    left: 2.59rem;
+    opacity: 0
+}
+.submit{
+    width: 2.31rem;
+    height: 0.76rem;
+    background-image: linear-gradient(
+            #03cbfd,
+            #03cbfd),
+    linear-gradient(
+            #03cbfd,
+            #03cbfd);
+    background-blend-mode: normal,
+    normal;
+    border-radius: 0.2rem;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-size: 0.3rem;
+    color: #ffffff;
+    position: absolute;
+    top: 5rem;
+    left: 2.59rem;
+}

@@ -1,0 +1,78 @@
+<html>
+<head>
+    <title></title>
+</head>
+<style>
+</style>
+<body>
+    <layout name="Layout/index" />
+    <div class="container">
+        <div class="header">
+            <h2>check</h2>
+        </div>
+        <div class="body">
+            <div>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="text-align: center;">
+                        借款人申请表
+                    </div>
+                </div>
+                <!-- <button class="btn btn-primary btn-sm">批量删除</button><br/> -->
+
+                <table class="table table-secondary table-hover text-center col-md-2">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th></th>
+                            <th>时间</th>
+                            <th>编号</th>
+                            <th>借款人姓名</th>
+                            <th>电话</th>
+                            <th>金额</th>
+                            <th>还款方式</th>
+                            <th>期限(月)</th>
+                            <th>总利息</th>
+                            <th>月利息</th>
+                            <th>手续费(%)</th>
+                            <th>用途</th>
+                            <th>状态</th>
+                            <!-- <th>操作</th> -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <volist name="result" id="val">
+                            <tr>
+                                <td><input type="checkbox"></td>
+                                <td>{$val.create_time}</td>
+                                <td>{$val.loan_id}</td>
+                                <td>{$val.name}</td>
+                                <td>{$val.number}</td>
+                                <td>{$val.sum}</td>
+                                <td>{$val.method}</td>
+                                <td>{$val.deadline}</td>
+                                <td>{$val.interest}</td>
+                                <td>{$val.mon_interest}</td>
+                                <td>{$val.poundage}</td>
+                                <td>{$val.use}</td>
+                                <td>
+                                    <switch name="val['status']">
+                                        <case value="2">未申请</case>
+                                        <case value="4">已申请</case>
+                                    </switch>
+                                </td>
+                                <!-- <td><button class="btn btn-primary btn-sm delete_loan">删除</button></td> -->
+                            </tr>
+                        </volist>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+<!--  -->
+<script>
+
+</script>
+</body>
+</html>

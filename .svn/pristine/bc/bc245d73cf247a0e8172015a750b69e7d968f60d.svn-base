@@ -1,0 +1,83 @@
+@charset "UTF-8";
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    /*background-color: rgb(244,244,244);*/
+    /*background: url("../images/2_scan.png")no-repeat center/4.95rem 4.95rem transparent;*/
+}
+header{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 1.32rem;
+    font-size: 0.32rem;
+    text-align: center;
+    line-height: 1.5rem;
+    color: white;
+    background-color: #03cbfd;
+    letter-spacing: 0.02rem;
+
+}
+header a{
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+    width: 1.5rem;
+    height: 0.88rem;
+    line-height: 1rem;
+    text-indent: 0.4rem;
+    font-size: 0.3rem;
+    color: white;
+}
+header a img{
+    position: absolute;
+    top: 0.25rem;
+    left: 0.1rem;
+    width: 0.53rem;
+    height: 0.53rem;
+    margin: auto;
+}
+
+/*main */
+
+main {
+    background: url("../img/bg.png") no-repeat 0 -0.45rem;
+    background-size: cover;
+    position: relative;
+    padding-top: 5rem;
+    padding-bottom: 2.31rem;
+}
+
+section .img {
+    background: url("../img/LOGO.png");
+    background-size: cover;
+    width: 1.82rem;
+    height: 1.72rem;
+    text-align: center;
+    line-height: 1.72rem;
+    margin: 0 auto;
+
+}
+section {
+    text-align: center;
+}
+section img {
+    width: 2.15rem;
+    height: 0.68rem;
+    padding-top: 0.21rem;
+}
+section .img img {
+    width: 1.6rem;
+    height: 0.48rem;
+}
+section .p {
+    margin-top: 0.7rem;
+    font-size: 0.3rem;
+}
+.vdw img {
+    width: 2.15rem;
+    height: 0.68rem;
+
+}

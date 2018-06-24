@@ -1,0 +1,61 @@
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+    <layout name="Layout/index" />
+    <div class="container">
+        <div class="header">
+            <h2>setting</h2>
+        </div>
+        <div class="body">
+            <div>
+                <div class="panel panel-default">
+                    <div class="panel-body" style="text-align: center;">
+                        平台设置
+                    </div>
+                </div>
+                    <label>贷款额度</label><input type="text" id="sum" placeholder="{$result[0].sum}">
+                    <label>手续费(%)</label><input type="text" id="poundage" placeholder="{$result[0].poundage}">
+                    <label>利率(%)</label><input type="text" id="rate" placeholder="{$result[0].rate}">
+                <div class="col-md-6 offset-3">
+                    <button class="btn btn-primary btn-lg btn-block" id="submit">保存</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+
+        </div>
+    </div>
+
+<!--  -->
+<script>
+$('#submit').on('click', function(){
+    if($('#poundage').val() == ''){
+        alert('请输入信息');
+        return false;
+    }
+    if($('#rate').val() == ''){
+        alert('请输入信息');
+        return false;
+    }
+    $.ajax({
+        url: "{:U('admin/index/updateSetting')}",
+        type: "post",
+        dataType: "json",
+        data: {
+            sum: $('#sum').val(),
+            poundage: $('#poundage').val(),
+            rate: $('#rate').val()
+        },
+        success: function(data){
+            //console.log(data);
+            if(data.status == 1){
+                location.href = data.url;
+            }
+        }
+    });
+})
+</script>
+</body>
+</html>

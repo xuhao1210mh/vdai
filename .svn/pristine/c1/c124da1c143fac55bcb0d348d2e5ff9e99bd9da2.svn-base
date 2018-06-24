@@ -1,0 +1,86 @@
+body {
+    background: #f5f7f8;
+}
+section {
+    height: 3.38rem;
+    text-align: center;
+    margin-bottom: 0.1rem;
+    background: #ffffff;
+}
+section p , label{
+    font-size: 0.36rem;
+    letter-spacing: 0.02rem;
+}
+section .self {
+    background: url("../img/self.png") no-repeat;
+    background-size: 0.95rem 0.95rem ;
+    width: 0.95rem;
+    height: 0.95rem;
+    margin: 0 auto 0.18rem;
+    /*padding-top: 0.23rem;*/
+    line-height: 0.95rem;
+    font-size: 0.4rem;
+    color: #ffffff;
+    /*padding-top: 0.23rem;*/
+}
+
+section .qs {
+    background: url("../img/qinshu.png") no-repeat;
+    background-size: 0.95rem 0.95rem ;
+    width: 0.95rem;
+    height: 0.95rem;
+    margin: 0.15rem auto 0.18rem;
+    line-height: 0.95rem;
+    font-size: 0.4rem;
+    color: #ffffff;
+}
+
+section .friend {
+    background: url("../img/friend.png") no-repeat;
+    background-size: 0.95rem 0.95rem ;
+    width: 0.95rem;
+    height: 0.95rem;
+    margin: 0.15rem auto 0.18rem;
+    line-height: 0.95rem;
+    font-size: 0.4rem;
+    color: #ffffff;
+}
+section input {
+    border: none;
+    font-size: 0.3rem;
+    color: #bbbbbb;
+    padding-left: 0.3rem;
+    width: 1.6rem;
+    margin-top: -0.1rem;
+    letter-spacing: 1px;
+}
+form {
+    margin-top: 0.25rem;
+    margin-bottom: 0.48rem;
+}
+div button {
+    width: 4.7rem;
+    height: 0.76rem;
+    font-size: 0.37rem;
+    line-height: 0.76rem;
+    color: #03cbfd;
+    margin: 0.46rem auto;
+    display: block;
+    background-color: #ffffff;
+    box-shadow: 0px 3px 5px 1px
+    rgba(37, 36, 36, 0.29);
+    border-radius: 20px;
+    border: none;
+    letter-spacing: 0.02rem;
+}
+div {
+    position: relative;
+}
+div span {
+    position: absolute;
+    right: 0.17rem;
+    bottom: 0.88rem;
+    font-size: 0.18rem;
+    color: #ff0000;
+    letter-spacing: 0.01rem;
+}

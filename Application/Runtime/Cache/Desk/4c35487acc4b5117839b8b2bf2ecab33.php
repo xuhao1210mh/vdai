@@ -1,0 +1,34 @@
+<?php if (!defined('THINK_PATH')) exit();?><html>
+<head>
+    <title></title>
+    <script src="/Public/js/jquery-3.3.1.min.js"></script>
+    <script src="/Public/js/dsbridge.js"></script>
+</head>
+<body>
+    <div>
+        <textarea name="text" id="message" cols="30" rows="10"></textarea>
+        <button type="button" id="submit">提交</button>>
+    </div>
+<!--  -->
+<script>
+$('#submit').on('click', function(){
+    $.ajax({
+        url: "<?php echo U('desk/center/writeMessage');?>",
+        type: "post",
+        dataType: "json",
+        data: {
+            content: $('#message').val()
+        },
+        success: function(data){
+            if(data.status == 1){
+                bridge.call("toast", data.info);
+                location.href = data.url;
+            }else{
+                bridge.call("toast", data.info);
+            }
+        }
+    })
+})
+</script>
+</body>
+</html>

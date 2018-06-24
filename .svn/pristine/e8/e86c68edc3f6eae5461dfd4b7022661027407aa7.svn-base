@@ -1,0 +1,94 @@
+header {
+    letter-spacing: 0.01rem;
+}
+.one div.line {
+    height: 0.12rem;
+    width: 5.66rem;
+    background: #03cbfd;
+    margin: 0.89rem auto 0.7rem;
+    position: relative;
+}
+.one {
+    text-align: center;
+}
+.tip {
+    margin: 0 0.26rem 1.19rem;
+}
+.one span {
+    font-size: 0.24rem;
+    letter-spacing: 0.01rem;
+    color: #464646;
+    padding-right: 0.4rem;
+}
+span.last {
+    padding-right: 0;
+}
+.line img {
+    position: absolute;
+    width: 0.38rem;
+    height: 0.38rem;
+    top: -0.12rem;
+    z-index: 100;
+}
+.line img.one {
+    left: -0.38rem;
+}
+.line img.two {
+    left: 1.13rem;
+}
+.line img.three {
+    left: 2.63rem;
+}
+.line img.four {
+    left: 4.13rem;
+}
+.line img.five {
+    right: -0.38rem;
+}
+
+section.two {
+    width: 4.97rem;
+    height: 4.97rem;
+    margin: 0 auto 1.49rem;
+    position: relative;
+    text-align: center;
+}
+section.two p.edu {
+    padding-top: 1.41rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.36rem;
+    letter-spacing: 0.02rem;
+    color: #03cbfd;
+}
+section.two p.fiveW {
+    letter-spacing: 0.04rem;
+    color: #03cbfd;
+    font-size: 0.72rem;
+}
+section.two img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4.97rem;
+    height: 4.97rem;
+}
+section.two img.ty2 {
+    top: 0.42rem;
+    left: 0.42rem;
+    width: 4.12rem;
+    height: 4.12rem;
+}
+
+section.three input {
+    width: 3.56rem;
+    height: 0.76rem;
+    background-color: #03cbfd;
+    box-shadow: 0.01rem 0.02rem 0.05rem 0.01rem
+    rgba(37, 36, 36, 0.29);
+    border-radius: 0.2rem;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    font-size: 0.37rem;
+    color: #ffffff;
+}

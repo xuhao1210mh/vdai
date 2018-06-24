@@ -1,0 +1,47 @@
+header {
+    letter-spacing: 0.02rem;
+}
+.one {
+    margin: 1.17rem auto;
+    width: 4.5rem;
+    text-align: center;
+}
+img.wechat {
+    width: 1.62rem;
+    height: 1.62rem;
+}
+img.round {
+    position: absolute;
+    top: 1.66rem;
+    left: 0.2rem;
+}
+.one p {
+    font-size: 0.36rem;
+    color: #000000;
+    letter-spacing: 0.02rem;
+    margin-top: 0.23rem;
+}
+.one input {
+    width: 4.5rem;
+    height: 0.7rem;
+    background-color: #ffffff;
+    border-radius: 0.15rem;
+    border: solid 0.04rem #03cbfd;
+    font-size: 0.36rem;
+    color: #bbbbbb;
+    letter-spacing: 0.02rem;
+    text-indent: 0.31rem;
+    margin-top: 0.41rem;
+}
+.two input {
+    width: 4.5rem;
+    height: 0.85rem;
+    background-color: #03cbfd;
+    border-radius: 0.42rem;
+    font-size: 0.36rem;
+    letter-spacing: 0.02rem;
+    color: #ffffff;
+    margin: 1.17rem auto auto;
+    display: block;
+    border: none;
+}
