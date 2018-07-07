@@ -110,3 +110,11 @@ INFO: [ app_begin ] --START--
 INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000738s ]
 INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
 
+[ 2018-07-08T00:22:02+08:00 ] 127.0.0.1 /payment/pay/payFunction
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+
