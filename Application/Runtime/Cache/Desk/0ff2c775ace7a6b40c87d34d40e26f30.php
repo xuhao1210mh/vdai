@@ -64,7 +64,7 @@
 </head>
 <body>
 <header>
-    <a href="#" class="back">
+    <a class="back">
         <img src="/Public/img/return.png" alt="">
         返回
     </a>
@@ -103,19 +103,7 @@
 <!--  -->
 <script>
 $('.back').on('click', function(){
-    $.ajax({
-        url: "<?php echo U('/desk/tools/jump');?>",
-        type: "post",
-        dataType: "json",
-        data: {
-            flag1: 'desk',
-            flag2: 'center',
-            flag3: 'myLoan'
-        },
-        success: function(data){
-            location.href = data.url;
-        }
-    });
+    location.href = '/desk/center/myLoan';
 })
 
 $('#submit').on('click', function(){

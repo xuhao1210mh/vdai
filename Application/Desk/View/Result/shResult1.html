@@ -94,8 +94,8 @@
 <section class="two">
     <p>请耐心等待工作人员审核结果</p>
     <input type="button" value="确定" class="back">
-    <!-- <button type="submit">急速审核</button>
-    <p class="red">无需等待，立即查看可贷额度</p> -->
+    <button type="button" id="payMoney">急速审核</button>
+    <p class="red">无需等待，立即查看可贷额度</p>
 </section>
 
 <!--  -->

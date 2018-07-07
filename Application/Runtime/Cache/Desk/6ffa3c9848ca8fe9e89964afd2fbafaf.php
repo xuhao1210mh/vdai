@@ -74,7 +74,7 @@
 <!--bg-->
 <main>
     <section>
-        <p class="self">本人</p>
+        <p class="self">亲属</p>
         <p>亲属联系方式</p>
         <form id="user">
             <label for="name">姓名:</label>
@@ -86,7 +86,7 @@
     </section>
 
     <section>
-        <p class="qs">亲属</p>
+        <p class="qs">朋友</p>
         <p>朋友联系方式</p>
         <form id="family">
             <label for="name">姓名:</label>

@@ -103,7 +103,7 @@
 <!--  -->
 <script>
 $('.back').on('click', function(){
-    location.href = '/desk/center/myloan';
+    location.href = '/desk/center/myLoan';
 })
 
 $('#submit').on('click', function(){

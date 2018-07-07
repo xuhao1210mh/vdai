@@ -177,6 +177,7 @@
         // });
         //var mon_interest = interest / parseInt($('#deadline').val());
         var mon_interest = interest / 12;
+        mon_interest = parseFloat(mon_interest).toFixed(2);
         $('#mon_interest').html(mon_interest);
         var poundage = sum * ($('#poundage').attr('class'))/100;
         $('#interest').html(interest);
