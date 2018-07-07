@@ -2528,3 +2528,9 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
 ERR: 无法加载模块:Public
 
+[ 2018-07-07T22:44:11+08:00 ] 127.0.0.1 /pay/pay/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000282s ]
+ERR: 无法加载模块:Pay
+

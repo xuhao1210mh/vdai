@@ -16,6 +16,7 @@ class LoginModel extends Model{
         $result = $this->query("select id from user where username='$username' and password='$password'");
         if($result[0]['id']){
             session('id', $result[0]['id']);
+            session('username', $result[0]['username']);
             return 1;
         }else{
             return 0;
