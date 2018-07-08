@@ -32,7 +32,29 @@ class PayController extends Controller{
         $returndata['price'] = $price;
         $returndata['return_url'] = $return_url;
         $returndata['uid'] = $uid;
-        $this->success(self::jsonSuccess("OK",$returndata,"http://95.169.20.94:501/payment/PayReturn/payReturn"));
+
+        $this->success(self::jsonSuccess("OK",$returndata,""));
+    }
+
+    private function payCurl(){
+        $returndata['goodsname'] = $_POST['goodsname'];
+        $returndata['istype'] = $_POST['istype'];
+        $returndata['key'] = $_POST['key'];
+        $returndata['notify_url'] = $_POST['notify_url'];
+        $returndata['orderid'] = $_POST['orderid'];
+        $returndata['orderuid'] = $_POST['orderuid'];
+        $returndata['price'] = $_POST['price'];
+        $returndata['return_url'] = $_POST['return_url'];
+        $returndata['uid'] = $_POST['uid'];
+
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, 'https://pay.paysapi.com');
+        curl_setopt($curl, CURLOPT_HEADER, 1);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_POST, 1);
+        curl_setopt($curl, CURLOPT_POSTFIELDS, $returndata);
+        curl_exec($curl);
+        curl_close($curl);
     }
 
     //返回错误
