@@ -22,6 +22,8 @@ class PayReturnController extends Controller{
         $data['status'] = 2;
         $data['isfast'] = 1;
         $loan->where("orderid='$orderid'")->data($data)->save();
+        $result = $loan->where("orderid='$orderid'")->find();
+        $this->assign('result', $result);
         $this->display();
     
     }

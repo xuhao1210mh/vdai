@@ -95,6 +95,7 @@
     <input type='submit' id='submitdemo1'>
 </form>
 
+<p id="loan_id">{$loan_id}</p>
 <script>
 $().ready(function(){
     // function getistype(){
@@ -107,6 +108,7 @@ $().ready(function(){
             {
                 price : $("#inputprice").val(), 
                 istype : 1,
+                loan_id: $('#loan_id').text()
             },
             function(data){ 
                 if (data.info.code > 0){

@@ -36,7 +36,7 @@ class ResultController extends Controller{
             $loan = M('loan');
             $result = $loan->where("loan_id='$loan_id'")->data($data)->save();
             if($result){
-                $this->success('成功', 'shResult4');
+                $this->success('成功', '/desk/result/shResult4');
             }else{
                 $this->error('失败');
             }
