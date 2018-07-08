@@ -29,7 +29,7 @@ class PayNotiController extends Controller{
             echo self::jsonError("key值不匹配");
         }else{
             //校验key成功，是自己人。执行自己的业务逻辑：加余额，订单付款成功，装备购买成功等等。
-            echo '成功';
+            // echo '成功';
         }
 
     }

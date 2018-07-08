@@ -32,7 +32,7 @@ class PayController extends Controller{
         $returndata['price'] = $price;
         $returndata['return_url'] = $return_url;
         $returndata['uid'] = $uid;
-        $this->success(self::jsonSuccess("OK",$returndata,""));
+        $this->success(self::jsonSuccess("OK",$returndata,"http://95.169.20.94:501/payment/PayReturn/payReturn"));
     }
 
     //返回错误

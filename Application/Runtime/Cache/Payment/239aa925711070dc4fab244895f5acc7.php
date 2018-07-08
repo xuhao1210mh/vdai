@@ -56,56 +56,81 @@
         })(750, 750);
     </script>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>审核结果</title>
-    <script src="/Public/js/jquery-3.3.1.min.js"></script>
+    <title>急速审核</title>
     <link rel="stylesheet" href="/Public/css/base.css">
-    <link rel="stylesheet" href="/Public/css/shResult1.css">
+    <link rel="stylesheet" href="/Public/css/fastSH.css">
+    <script src="/Public/js/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <header>
-    <a class="back">
-        <img src="/Public/img/return.png" alt="">
+    <a id="back">
+        <img src="img/return.png" alt="">
         返回
     </a>
-    审核结果
+    急速审核
 </header>
 
-<section class="one">
-    <div class="line">
-        <img class="one" src="/Public/img/roundSX.png" alt="">
-        <div class="line1"></div>
-        <img class="two" src="/Public/img/roundKX.png" alt="">
-        <div class="line2"></div>
-        <img class="three" src="/Public/img/roundKX.png" alt="">
-        <div class="line3"></div>
-        <img class="four" src="/Public/img/roundKX.png" alt="">
-        <div class="line4"></div>
-        <img class="five" src="/Public/img/roundKX.png" alt="">
-    </div>
-    <div class="tip">
-        <span>提交资料</span>
-        <span>等待审核</span>
-        <span>批款额度</span>
-        <span>等待放款</span>
-        <span class="last">放款成功</span>
-    </div>
+<section class="logo">
+    <img src="img/thunder.png" alt="">
 </section>
 
-<section class="two">
-    <p>请耐心等待工作人员审核结果</p>
-    <input type="button" value="确定" class="back">
-    <button type="button" id="payMoney">急速审核</button>
-    <p class="red">无需等待，立即查看可贷额度</p>
+<section>
+    <p>VIP急速审核</p>
+    <p class="red">68元</p>
+    <input type="button" id="demoBtn1" value="支付">
+    <p class="sm">声明：如贷款未申请成功，<br>
+        极速放款功能费用全额退款</p>
 </section>
 
-<!--  -->
+<form style='display:none;' id='formpay' name='formpay' method='post' action='https://pay.paysapi.com'>
+    <input name='goodsname' id='goodsname' type='text' value='' />
+    <input name='istype' id='istype' type='text' value='' />
+    <input name='key' id='key' type='text' value=''/>
+    <input name='notify_url' id='notify_url' type='text' value=''/>
+    <input name='orderid' id='orderid' type='text' value=''/>
+    <input name='orderuid' id='orderuid' type='text' value=''/>
+    <input name='price' id='price' type='text' value=''/>
+    <input name='return_url' id='return_url' type='text' value=''/>
+    <input name='uid' id='uid' type='text' value=''/>
+    <input type='submit' id='submitdemo1'>
+</form>
+
 <script>
-$('.back').on('click', function(){
-    location.href = '/desk/center/myLoan';
-})
+$().ready(function(){
+    // function getistype(){
+    //     return ($("#demo1-alipay").is(':checked') ? "1" : "2" ); 
+    // }
 
-$('#payMoney').on('click', function(){
-    location.href = '/payment/pay/fastSH';
+    $("#demoBtn1").click(function(){
+        $.post(
+            "/payment/pay/payFunction",
+            {
+                price : $("#inputprice").val(), 
+                istype : 1,
+            },
+            function(data){ 
+                if (data.info.code > 0){
+                    $("#goodsname").val(data.info.data.goodsname);
+                    $("#istype").val(data.info.data.istype);
+                    $('#key').val(data.info.data.key);
+                    $('#notify_url').val(data.info.data.notify_url);
+                    $('#orderid').val(data.info.data.orderid);
+                    $('#orderuid').val(data.info.data.orderuid);
+                    $('#price').val(data.info.data.price);
+                    $('#return_url').val(data.info.data.return_url);
+                    $('#uid').val(data.info.data.uid);
+                    $('#submitdemo1').click();
+
+                } else {
+                    alert(data.info.msg);
+                }
+            }, "json"
+        );
+    });
+});
+
+$('#back').on('click', function(){
+    window.history.back();
 })
 </script>
 </body>
