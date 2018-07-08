@@ -9,6 +9,8 @@ class PayController extends Controller{
         $istype = $_POST["istype"];
         
         $orderuid = 'username';//$_SESSION['username'];       //此处传入您网站用户的用户名，方便在paysapi后台查看是谁付的款，强烈建议加上。可忽略。
+    
+        $loan_id = $_GET['loan_id'];
 
         //校验传入的表单，确保价格为正常价格（整数，1位小数，2位小数都可以），支付渠道只能是1或者2，orderuid长度不要超过33个中英文字。
 
@@ -17,11 +19,15 @@ class PayController extends Controller{
         $orderid = time() . mt_rand(10000, 99999);    //每次有任何参数变化，订单号就变一个吧。
         $uid = "7d119e2dfc70ab48e11b884e";//"此处填写PaysApi的uid";
         $token = "abc6582ae4a605f39e052d5d28efd126";//"此处填写PaysApi的Token";
-        $return_url = 'http://95.169.20.94:501/payment/PayReturn/payReturn';
+        $return_url = 'http://95.169.20.94:501/payment/PayReturn/shResult2';
         $notify_url = 'http://95.169.20.94:501/payment/PayNoti/payNotify';
         
         $key = md5($goodsname. $istype . $notify_url . $orderid . $orderuid . $price . $return_url . $token . $uid);
         //经常遇到有研发问为啥key值返回错误，大多数原因：1.参数的排列顺序不对；2.上面的参数少传了，但是这里的key值又带进去计算了，导致服务端key算出来和你的不一样。
+
+        $loan = M('loan');
+        $data['loan_id'] = $orderid;
+        $loan->where("loan_id='$loan_id'")->data($data)->save();
 
         $returndata['goodsname'] = $goodsname;
         $returndata['istype'] = $istype;
@@ -34,27 +40,6 @@ class PayController extends Controller{
         $returndata['uid'] = $uid;
 
         $this->success(self::jsonSuccess("OK",$returndata,""));
-    }
-
-    private function payCurl(){
-        $returndata['goodsname'] = $_POST['goodsname'];
-        $returndata['istype'] = $_POST['istype'];
-        $returndata['key'] = $_POST['key'];
-        $returndata['notify_url'] = $_POST['notify_url'];
-        $returndata['orderid'] = $_POST['orderid'];
-        $returndata['orderuid'] = $_POST['orderuid'];
-        $returndata['price'] = $_POST['price'];
-        $returndata['return_url'] = $_POST['return_url'];
-        $returndata['uid'] = $_POST['uid'];
-
-        $curl = curl_init();
-        curl_setopt($curl, CURLOPT_URL, 'https://pay.paysapi.com');
-        curl_setopt($curl, CURLOPT_HEADER, 1);
-        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($curl, CURLOPT_POST, 1);
-        curl_setopt($curl, CURLOPT_POSTFIELDS, $returndata);
-        curl_exec($curl);
-        curl_close($curl);
     }
 
     //返回错误

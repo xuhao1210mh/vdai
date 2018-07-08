@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,8 +58,9 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>审核结果</title>
     <script src="/Public/js/jquery-3.3.1.min.js"></script>
+    <script src="/Public/js/dsbridge.js"></script>
     <link rel="stylesheet" href="/Public/css/base.css">
-    <link rel="stylesheet" href="/Public/css/shResult1.css">
+    <link rel="stylesheet" href="/Public/css/shResult.css">
 </head>
 <body>
 <header>
@@ -73,13 +74,9 @@
 <section class="one">
     <div class="line">
         <img class="one" src="/Public/img/roundSX.png" alt="">
-        <div class="line1"></div>
-        <img class="two" src="/Public/img/roundKX.png" alt="">
-        <div class="line2"></div>
-        <img class="three" src="/Public/img/roundKX.png" alt="">
-        <div class="line3"></div>
-        <img class="four" src="/Public/img/roundKX.png" alt="">
-        <div class="line4"></div>
+        <img class="two" src="/Public/img/roundSX.png" alt="">
+        <img class="three" src="/Public/img/roundSX.png" alt="">
+        <img class="four" src="/Public/img/roundSX.png" alt="">
         <img class="five" src="/Public/img/roundKX.png" alt="">
     </div>
     <div class="tip">
@@ -92,20 +89,41 @@
 </section>
 
 <section class="two">
-    <p>请耐心等待工作人员审核结果</p>
-    <input type="button" value="确定" class="back">
-    <button type="button" id="payMoney">急速审核</button>
-    <p class="red">无需等待，立即查看可贷额度</p>
+    <div class="img">
+        <img src="/Public/img/tuoYuan.png" alt="">
+        <img class="ty2" src="/Public/img/tuoYuan1.png" alt="">
+        <p class="edu">您的贷款额度</p>
+        <p class="fiveW" id="sum">{$result[0].sum}</p>
+    </div>
 </section>
 
+<section class="three">
+    <input type="button" value="立即提交" id="submit">
+</section>
 <!--  -->
 <script>
 $('.back').on('click', function(){
     location.href = '/desk/center/myLoan';
 })
 
-$('#payMoney').on('click', function(){
-    location.href = '/payment/pay/fastSH?loan_id=<?php echo ($loan_id); ?>';
+$('#submit').on('click', function(){
+    $.ajax({
+        url: "{:U('/desk/result/excute')}",
+        type: "post",
+        dataType: "json",
+        data: {
+            sum: $('#sum').text()
+        },
+        success: function(data){
+            //console.log(data);
+            if(data.status == 1){
+                dsBridge.call("toast", '您已提交申请，请等待工作人员联系');
+                location.href = data.url;
+            }else{
+                dsBridge.call("toast", '提交失败');
+            }
+        }
+    });
 })
 </script>
 </body>

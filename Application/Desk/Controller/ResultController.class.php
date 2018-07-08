@@ -44,6 +44,8 @@ class ResultController extends Controller{
     }
 
     function shResult1(){
+        $loan_id = $_SESSION['loan_id'];
+        $this->assign('loan_id', $loan_id);
         $this->display();
     }
 
