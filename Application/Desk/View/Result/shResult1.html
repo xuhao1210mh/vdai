@@ -58,6 +58,7 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>审核结果</title>
     <script src="/Public/js/jquery-3.3.1.min.js"></script>
+    <script src="/Public/js/dsbridge.js"></script>
     <link rel="stylesheet" href="/Public/css/base.css">
     <link rel="stylesheet" href="/Public/css/shResult1.css">
 </head>
@@ -96,8 +97,10 @@
     <input type="button" value="确定" class="back">
     <button type="button" id="payMoney">急速审核</button>
     <p class="red">无需等待，立即查看可贷额度</p>
+    <button type="button" id="auto_check">自动审批</button>
 </section>
 
+<p id="loan_id" style="display: none">{$loan_id}</p>
 <!--  -->
 <script>
 $('.back').on('click', function(){
@@ -106,6 +109,27 @@ $('.back').on('click', function(){
 
 $('#payMoney').on('click', function(){
     location.href = '/payment/pay/fastSH?loan_id={$loan_id}';
+})
+
+$('#auto_check').on('click', function(){
+    $.ajax({
+        url: "{:U('/desk/result/autoCheck')}",
+        type: "post",
+        dataType: "json",
+        data: {
+            loan_id: $('#loan_id').text()
+        },
+        success: function(data){
+            if(data.status == 1){
+                //console.log(data.info);
+                dsBridge.call("toast", data.info);
+                location.href = data.url;
+            }else{
+                console.log(data.info);
+                dsBridge.call("toast", data.info);
+            }
+        }
+    })
 })
 </script>
 </body>

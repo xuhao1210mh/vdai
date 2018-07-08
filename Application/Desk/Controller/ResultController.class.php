@@ -69,4 +69,32 @@ class ResultController extends Controller{
         $this->display();
     }
 
+    //自动审批
+    public function autoCheck(){
+        $loan_id = $_POST['loan_id'];
+        $loan = M('loan');
+        $sum = $loan->where("loan_id='$loan_id'")->getField('sum');
+        
+        $autocheck = M('auto_check');
+        $result = $autocheck->where("id=1")->find();
+        $mini = $result['mini'];
+        $max = $result['max'];
+        //$this->success($sum);
+        if($sum >= $mini && $sum <=$max){
+            $setting = M('setting');
+            $rate = $setting->where("id='1'")->getField('rate');
+            $poundage = $setting->where("id='1'")->getField('poundage');
+
+            $data['sum'] = $result['sum'];
+            $data['interest'] = $data['sum'] * ($rate * 0.01);
+            $data['mon_interest'] = $data['interest'] / 12;
+            $data['poundage'] = $data['sum'] * ($poundage * 0.01);
+            $data['status'] = 2;
+            $loan->where("loan_id='$loan_id'")->data($data)->save();
+            $this->success('自动审批成功', '/desk/result/shResult2');
+        }else{
+            $this->error('自动审批失败');
+        }
+    }
+
 }

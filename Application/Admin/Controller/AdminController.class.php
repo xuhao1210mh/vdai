@@ -201,7 +201,7 @@ class AdminController extends BaseController{
     //管理员信息
     public function adminList(){
         $admin = M('admin');
-        $result = $admin->order('uid asc')->select();
+        $result = $admin->where("status=1")->order('uid asc')->select();
         // print_r($result);
         $this->assign('result', $result);
         if(IS_AJAX){
