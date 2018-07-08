@@ -119,12 +119,12 @@
                             <cite>平台设置</cite>
                         </a>
                     </li >
-                    <!-- <li>
-                        <a _href="deadline.html">
+                    <li>
+                        <a _href="autoCheck">
                             <i class="iconfont">&#xe6a7;</i>
-                            <cite>还款期限设置</cite>
+                            <cite>自动审批设置</cite>
                         </a>
-                    </li > -->
+                    </li >
                 </ul>
             </li>
             <!-- <li>

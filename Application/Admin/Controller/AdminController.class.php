@@ -293,4 +293,52 @@ class AdminController extends BaseController{
         $this->display();
     }
 
+    //急速审核列表
+    public function fastList(){
+        $name = $_GET['name'];
+        if($name != ''){
+            $loan = M('loan');
+            $result = $loan->where("status='1',isfast='1',name='$name'")->order('create_time desc')->select();
+            $this->assign('result', $result);
+            $this->display();
+            exit();
+        }
+
+        $loan = M('loan');
+        $result = $loan->where("status='1' and isfast='1'")->order('create_time desc')->select();
+        $this->assign('result', $result);
+        $this->display();
+    }
+
+    //自动审批设置
+    public function autoCheck(){
+        $autocheck = M('auto_check');
+        $result = $autocheck->where("id=1")->find();
+        $this->assign('result', $result);
+        $this->display();
+    }
+
+    //自动审批编辑/修改
+    public function autoCheckEdit(){
+        $autocheck = M('auto_check');
+        $result = $autocheck->where("id=1")->find();
+        $this->assign('result', $result);
+
+        if(IS_AJAX){
+            $data = [
+                'mini' => $_POST['mini'],
+                'max' => $_POST['max'],
+                'sum' => $_POST['sum'],
+            ];
+            $autocheck = M('auto_check');
+            $result = $autocheck->where("id=1")->data($data)->save();
+            if($result){
+                $this->success('成功');
+            }else{
+                $this->error('失败');
+            }
+        }
+
+        $this->display();
+    }
 }
