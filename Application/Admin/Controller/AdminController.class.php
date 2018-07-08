@@ -301,14 +301,14 @@ class AdminController extends BaseController{
         $name = $_GET['name'];
         if($name != ''){
             $loan = M('loan');
-            $result = $loan->where("status='1',isfast='1',name='$name'")->order('create_time desc')->select();
+            $result = $loan->where("status='4' and isfast='1' and name='$name'")->order('create_time desc')->select();
             $this->assign('result', $result);
             $this->display();
             exit();
         }
 
         $loan = M('loan');
-        $result = $loan->where("status='1' and isfast='1'")->order('create_time desc')->select();
+        $result = $loan->where("status='4' and isfast='1'")->order('create_time desc')->select();
         $this->assign('result', $result);
         $this->display();
     }

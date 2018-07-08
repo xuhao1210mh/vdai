@@ -76,6 +76,12 @@
                 </a>
                 <ul class="sub-menu">
                     <li>
+                        <a _href="fastList.html">
+                            <i class="iconfont">&#xe6a7;</i>
+                            <cite>急速审核</cite>
+                        </a>
+                    </li >
+                    <li>
                         <a _href="showLoan.html">
                             <i class="iconfont">&#xe6a7;</i>
                             <cite>贷款人审核</cite>

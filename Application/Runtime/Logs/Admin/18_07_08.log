@@ -698,3 +698,713 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
 INFO: [ app_end ] --END-- [ RunTime:0.000387s ]
 
+[ 2018-07-08T14:47:48+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000564s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0011s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000410s ]
+
+[ 2018-07-08T14:47:48+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000016s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000032s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004368s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004471s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000450s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000386s ]
+
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000314s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000925s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000959s ]
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /admin/admin/applyLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000202s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000306s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 174 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0004s ]
+SQL: select * from loan where status='4' order by create_time desc [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 84 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\73f1e1bcbd7e4fd16414ecc993ebc4a9.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021024s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-07-08T14:47:55+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000228s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021229s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021247s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-07-08T14:48:51+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0012s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000073s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000109s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016860s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016888s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000215s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000357s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-07-08T14:48:51+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003733s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000331s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000200s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000042s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022260s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022280s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000317s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000331s ]
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000183s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000386s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000400s ]
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /admin/admin/checkLoan/?loan_id=160&id=6
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+SQL: SHOW COLUMNS FROM `auth_first` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `auth_second` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `auth_third` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `auth_first` WHERE `loan_id` = 160 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `auth_second` WHERE `loan_id` = 160 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `auth_third` WHERE `loan_id` = 160 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000038s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023190s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000349s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000364s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000388s ]
+
+[ 2018-07-08T14:49:22+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022702s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022721s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000322s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2018-07-08T14:50:04+08:00 ] 127.0.0.1 /admin/admin/showLoan.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000276s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 78 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `loan` WHERE ( status='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000039s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 85 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\920f94b60c243b19cfdf84536abf0c2f.php 第 87 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024192s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024211s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000153s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000384s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000404s ]
+
+[ 2018-07-08T14:50:09+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000520s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000040s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000214s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000352s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2018-07-08T14:50:09+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000219s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000281s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0005s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000017s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000434s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000453s ]
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /admin/admin/fastList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000273s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `loan` WHERE ( status='4' and isfast='1' ) ORDER BY create_time desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022658s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000152s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000302s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2018-07-08T14:51:02+08:00 ] 127.0.0.1 /admin/admin/fastList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000375s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `loan` WHERE ( status='4' and isfast='1' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020663s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000322s ]
+
+[ 2018-07-08T14:51:05+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000286s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000160s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000408s ]
+
+[ 2018-07-08T14:51:05+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000332s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000350s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000048s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007581s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007613s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000168s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000182s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000371s ]
+
+[ 2018-07-08T14:51:07+08:00 ] 127.0.0.1 /admin/admin/fastList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `loan` WHERE ( status='4' and isfast='1' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000314s ]
+
+[ 2018-07-08T14:52:23+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000020s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000035s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004217s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000210s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000353s ]
+
+[ 2018-07-08T14:52:23+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0018s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000046s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005410s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000196s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-07-08T14:52:24+08:00 ] 127.0.0.1 /admin/admin/fastList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000259s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000288s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `loan` WHERE ( status='4' and isfast=1 ) ORDER BY create_time desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000037s ]
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+NOTIC: [8] Undefined index: dead_time D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 81 行.
+NOTIC: [8] Undefined index: uid D:\my_project\vdai\Application\Runtime\Cache\Admin\48b53f81d8ce0de92e78bcc19424a34e.php 第 83 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021696s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021714s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000151s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2018-07-08T14:52:48+08:00 ] 127.0.0.1 /admin/admin/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000343s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0004s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004933s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005062s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000471s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000388s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2018-07-08T14:52:48+08:00 ] 127.0.0.1 /admin/admin/welcome.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000226s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `admin` [ RunTime:0.0006s ]
+SQL: SELECT `username` FROM `admin` WHERE ( uid='1' ) LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006251s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000249s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2018-07-08T14:52:49+08:00 ] 127.0.0.1 /admin/admin/fastList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000295s ]
+NOTIC: [8] Undefined index: name D:\my_project\vdai\Application\Admin\Controller\AdminController.class.php 第 301 行.
+SQL: SHOW COLUMNS FROM `loan` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `loan` WHERE ( status='4' and isfast='1' ) ORDER BY create_time desc  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021485s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021508s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+

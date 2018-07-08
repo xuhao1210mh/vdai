@@ -10,3 +10,267 @@ INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
 INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
 ERR: 无法加载模块:Public
 
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:51+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000194s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000192s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:53+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000187s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:55+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:55+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:55+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000209s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:47:55+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000212s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000205s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000216s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:48:53+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000003s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000186s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000271s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000436s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000207s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:05+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000231s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/css/dialog.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000197s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/jquery-3.3.1.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000229s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000344s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:17+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:22+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:22+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:22+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:49:22+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000334s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:04+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000198s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:04+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000218s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:04+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000196s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /Public/assets/js/popper.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000208s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /Public/assets/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000005s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000221s ]
+ERR: 无法加载模块:Public
+
+[ 2018-07-08T14:50:10+08:00 ] 127.0.0.1 /Public/assets/js/dialog.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000004s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000195s ]
+ERR: 无法加载模块:Public
+
