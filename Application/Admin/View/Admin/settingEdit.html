@@ -60,6 +60,18 @@
                   <span class="x-red">*</span>
               </div>
           </div>
+          <div class="layui-form-item">
+            <label for="L_email" class="layui-form-label">
+                <span class="x-red">*</span>急速审核费用
+            </label>
+            <div class="layui-input-inline">
+                <input type="text" value="{$result.fast}" id="fast" name="fast" required="" lay-verify="required"
+                autocomplete="off" class="layui-input">
+            </div>
+            <div class="layui-form-mid layui-word-aux">
+                <span class="x-red">*</span>
+            </div>
+        </div>
         
           
           <div class="layui-form-item">
@@ -91,6 +103,7 @@
                     sum: $('#sum').val(),
                     poundage: $('#phone').val(),
                     rate: $('#L_email').val(),
+                    fast: $('#fast').val()
                 },
                 success: function(data){
                     if(data.status == 1){

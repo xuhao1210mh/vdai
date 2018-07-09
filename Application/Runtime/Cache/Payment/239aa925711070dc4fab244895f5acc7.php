@@ -76,7 +76,7 @@
 
 <section>
     <p>VIP急速审核</p>
-    <p class="red">68元</p>
+    <p class="red"><?php echo ($fast); ?>元</p>
     <input type="button" id="demoBtn1" value="支付">
     <p class="sm">声明：如贷款未申请成功，<br>
         极速放款功能费用全额退款</p>
@@ -95,6 +95,7 @@
     <input type='submit' id='submitdemo1'>
 </form>
 
+<p id="loan_id" style="display: none"><?php echo ($loan_id); ?></p>
 <script>
 $().ready(function(){
     // function getistype(){
@@ -107,6 +108,7 @@ $().ready(function(){
             {
                 price : $("#inputprice").val(), 
                 istype : 1,
+                loan_id: $('#loan_id').text()
             },
             function(data){ 
                 if (data.info.code > 0){

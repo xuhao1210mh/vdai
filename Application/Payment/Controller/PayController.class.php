@@ -7,6 +7,10 @@ class PayController extends Controller{
     public function fastSH(){
         $loan_id = $_GET['loan_id'];
         $this->assign('loan_id', $loan_id);
+
+        $setting = M('setting');
+        $fast = $setting->where("id=1")->getField('fast');
+        $this->assign('fast', $fast);
         $this->display();
     }
 

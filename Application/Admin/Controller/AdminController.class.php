@@ -283,6 +283,7 @@ class AdminController extends BaseController{
                 'sum' => $_POST['sum'],
                 'poundage' => $_POST['poundage'],
                 'rate' => $_POST['rate'],
+                'fast' => $_POST['fast']
             ];
             $setting = M('setting');
             $result = $setting->where("id=1")->data($data)->save();
