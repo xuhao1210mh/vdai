@@ -64,19 +64,19 @@
 <body>
 <header>
     <a id="back">
-        <img src="img/return.png" alt="">
+        <img src="/Public/img/return.png" alt="">
         返回
     </a>
     急速审核
 </header>
 
 <section class="logo">
-    <img src="img/thunder.png" alt="">
+    <img src="/Public/img/thunder.png" alt="">
 </section>
 
 <section>
     <p>VIP急速审核</p>
-    <p class="red"><?php echo ($fast); ?>元</p>
+    <p class="red" id="fast"><?php echo ($fast); ?>元</p>
     <input type="button" id="demoBtn1" value="支付">
     <p class="sm">声明：如贷款未申请成功，<br>
         极速放款功能费用全额退款</p>
@@ -106,7 +106,7 @@ $().ready(function(){
         $.post(
             "/payment/pay/payFunction",
             {
-                price : $("#inputprice").val(), 
+                price : parseFloat($("#fast").text()), 
                 istype : 1,
                 loan_id: $('#loan_id').text()
             },

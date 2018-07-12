@@ -97,7 +97,7 @@
     <input type="button" value="确定" class="back">
     <button type="button" id="payMoney">急速审核</button>
     <p class="red">无需等待，立即查看可贷额度</p>
-    <button type="button" id="auto_check">自动审批</button>
+    <!-- <button type="button" id="auto_check">自动审批</button> -->
 </section>
 
 <p id="loan_id" style="display: none"><?php echo ($loan_id); ?></p>
@@ -125,7 +125,7 @@ $('#auto_check').on('click', function(){
                 dsBridge.call("toast", data.info);
                 location.href = data.url;
             }else{
-                console.log(data.info);
+                //console.log(data.info);
                 dsBridge.call("toast", data.info);
             }
         }

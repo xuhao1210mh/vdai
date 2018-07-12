@@ -16,7 +16,7 @@ class PayController extends Controller{
 
     public function payFunction(){
         //从网页传入price:支付价格， istype:支付渠道：1-支付宝；2-微信支付
-        $price = 0.05;//$_POST["price"];
+        $price = $_POST["price"];
         $istype = $_POST["istype"];
         
         $orderuid = 'username';//$_SESSION['username'];       //此处传入您网站用户的用户名，方便在paysapi后台查看是谁付的款，强烈建议加上。可忽略。
